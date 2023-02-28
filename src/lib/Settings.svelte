@@ -36,5 +36,6 @@
     For Department Management see <Link to="/departments">Here</Link><br />
     For Class Management see <Link to="/classes">Here</Link><br />
   </p>
+  <NavButtons next="/pricing" prev="/students"/>
 
 </main>

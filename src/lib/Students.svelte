@@ -1,6 +1,8 @@
 <script>
   import NavButtons from "./Componets/NavButtons.svelte";
   import req from "../assets/requests.png";
+  import all from "../assets/manageStudent.png";
+  import score from "../assets/manageScore.png";
   import { Link } from "svelte-routing";
   //FIXME: Fix the loading in the manageschool
   //FIXME: fix loading in requests
@@ -38,15 +40,17 @@
     on the platform. On the list of students click on edit to be redirected to the
     page where you can Change and modify information about that student.
   </p>
-  <div>Place Image here</div>
+  <img src={all} alt="" class="img-fluid my-2" />
   That Page should look something like this:
-  <div>Place Image Here</div>
+  <img src={score} alt="" class="img-fluid my-2" />
+
   <p>
     This page as you can see is Divided into two sections The <b
       >Student information</b
     >
     and <b>Student Academic information</b> Sections respectively
   </p>
+
   <b>1. Students Infromation Section</b>
   <p>
     This is where the student's Bio information like name class, department
@@ -54,7 +58,6 @@
     effect on the student's account behaviour based on what was modified. And
     you are required to click on save for the modification to be applied
   </p>
-  <div>Place Image Here</div>
   <b>2. Students Academic information Section</b>
   <p>
     this displays the student's academic information notably examination scores
@@ -70,7 +73,7 @@
   <b>Student Academic information</b> section. Setting a normal or positive
   value will add to the score of the student for that subject while a negative
   value will deduct for that student.
-  <div>Show Image here</div>
+
   <hr />
   <h2>Setting Exam participation</h2>
   You can set which subject a student can currently participate in by simply clicking
@@ -84,6 +87,7 @@
     >In Sum if Subject participation is not set(Button not brightly colored
     background) that student cannot participate on that particular subject.</b
   >
+  <img src={score} alt="" class="img-fluid my-2" />
   <hr />
   <h2>Important Notes</h2>
   <p>
@@ -93,4 +97,5 @@
     table only appear when that subject have been attempted at least once by the
     student so do not be suprised if you find it empty
   </p>
+  <NavButtons prev="/subjects" next="/management"/>
 </main>

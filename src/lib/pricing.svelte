@@ -1,7 +1,6 @@
 <script>
   import NavButtons from "./Componets/NavButtons.svelte";
-  import img from "../assets/class.png";
-  import del from "../assets/classDel.png";
+  import price from "../assets/price1.png"
   import { Link } from "svelte-routing";
 </script>
 
@@ -19,12 +18,12 @@
     <b>Pro Tip: </b> you can let your plan expire if you are temporirily not
     using the platform Like on holidays.
     <br />
-    When your plan expires you will see the below message
+    When your plan expires you will see a warning message at your dashboard
   </p>
-  <div>Image here</div>
   <p>
     and from here you can renew your subscription. or you can renew your
     subscription via the <Link to="/settings">School Management</Link> page below are the list of plans we have
   </p>
-  <div>Image here</div>
+  <img src={price} class="img-fluid mt-2" alt='answerit pricing'/>
+  <NavButtons next="" prev="/management"/>
 </main>
