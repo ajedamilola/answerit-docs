@@ -10,6 +10,9 @@
   import Pricing from "./lib/pricing.svelte";
   import Subjects from "./lib/Subjects.svelte";
   import Students from "./lib/Students.svelte";
+    import ExamManagement from "./lib/ExamManagement.svelte";
+    import ExamSubjectConfig from "./lib/ExamSubjectConfig.svelte";
+    import QuestionsManagement from "./lib/QuestionsManagement.svelte";
 </script>
 
 <main class="main">
@@ -25,6 +28,9 @@
       <Route path="/students" component={Students} />
       <Route path="/management" component={Settings} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/exams" component={ExamManagement} />
+      <Route path="/exam-config" component={ExamSubjectConfig} />
+      <Route path="/questions" component={QuestionsManagement} />
     </div>
   </Router>
 </main>

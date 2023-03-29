@@ -23,7 +23,8 @@
   <p>
     and from here you can renew your subscription. or you can renew your
     subscription via the <Link to="/settings">School Management</Link> page below are the list of plans we have
+  . To renew your plan just click on the <b class="text-info">CHANGE PLAN / RENEW</b> button at the bottom part of the <b>school Information</b> tab
   </p>
   <img src={price} class="img-fluid mt-2" alt='answerit pricing'/>
-  <NavButtons next="" prev="/management"/>
+  <NavButtons next="/exams" prev="/management"/>
 </main>

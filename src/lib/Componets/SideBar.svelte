@@ -74,18 +74,18 @@
       </div>
       <!-- Examination -->
       <li class="nav-item" data-bs-target="#exams" data-bs-toggle="collapse">
-        <a href="#exams" class="text-dark nav-link dropdown-toggle">Examination Management</a>
+        <a href="#" class="text-dark nav-link dropdown-toggle">Examination Management</a>
       </li>
       <div class="collapse ps-2 show" id="exams">
         <ul class="navbar-nav">
           <li class="nav-item nested">
-            <Link to="" class={`nav-link`}>Introduction</Link>
+            <Link to="/exams" class={`nav-link ${page == "/exams" && "active fw-bold"}`}>Introduction</Link>
           </li>
           <li class="nav-item nested">
-            <Link to="" class={`nav-link`}>Subject Configuaration</Link>
+            <Link to="/exam-config" class={`nav-link ${page == "/exam-config" && "active fw-bold"}`}>Subject Configuaration</Link>
           </li>
           <li class="nav-item nested">
-            <Link to="" class={`nav-link`}>Questions Management</Link>
+            <Link to="/questions" class={`nav-link ${page == "/questions" && "active fw-bold"}`}>Questions Management</Link>
           </li>
         </ul>
       </div>
